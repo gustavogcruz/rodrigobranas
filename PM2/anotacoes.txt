@@ -1,0 +1,30 @@
+YARN
+
+yarn add - instala
+yarn init -y - inicializa sem perguntas
+
+
+PM2
+
+npx pm2 ecosystem - Gera um arquivo de configurações para a aplicação
+
+npx pm2 list
+npx pm2 log - monitora os logs da aplicação
+npx pm2 monit - permite monitorar o processo
+
+https://pm2.io/
+npx pm2 link - Conecta o monitoramento
+npx pm2 unlink - Desconecta o monitoramento
+
+
+npx pm2 start main.js
+-i - quantidade de instâncias
+--watch - inicia e monitora mudanças
+--name - atribui um nome a aplicação
+--no-daemon - inicia a aplicação diretamente
+
+npx pm2 stop ID or name or all
+
+npx pm2 restart ID or name or all
+
+npx pm2 delete main.js or all   
