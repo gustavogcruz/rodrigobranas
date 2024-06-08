@@ -1,0 +1,21 @@
+//Factory Function
+
+var criarPessoa = function (nome, idade) {
+    return {
+        nome: nome,
+        idade: idade
+    };
+};
+
+var ana = criarPessoa("Ana", 1);
+console.log(ana)
+
+//Construction Function
+
+var Pessoa = function (nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+};
+
+var theo = new Pessoa ("Théo", 4);
+console.log(theo);
